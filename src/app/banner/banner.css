@@ -1,0 +1,9 @@
+/* Taaki text aur image smooth lagein */
+h2 {
+  text-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Image zoom effect timing fix */
+img {
+  will-change: transform;
+}
