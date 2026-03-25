@@ -1,0 +1,49 @@
+/* Card entrance animation */
+:host {
+  display: block;
+}
+
+/* Custom easing for smooth feel */
+.group {
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+img {
+  will-change: transform;
+}
+
+/* Title underline effect */
+h3 {
+  position: relative;
+  display: inline-block;
+}
+
+h3::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #059669; /* emerald-600 */
+  transition: width 0.4s ease;
+}
+
+.group:hover h3::after {
+  width: 100%;
+}
+:host {
+  display: block;
+}
+
+/* Image zoom optimization */
+img {
+  will-change: transform;
+}
+
+/* Custom Grid Height adjustment for very small screens */
+@media (max-width: 640px) {
+  .grid {
+    auto-rows: 300px;
+  }
+}
