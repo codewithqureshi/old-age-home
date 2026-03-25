@@ -1,1 +1,83 @@
-<p>header works!</p>
+<header class="w-full shadow-sm sticky top-0 z-50">
+  
+  <div class="bg-emerald-800 text-white py-2 px-4">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-2 md:gap-8 text-[11px] md:text-xs font-medium tracking-wide">
+      
+      <div class="flex items-center space-x-4">
+        <span class="flex items-center gap-1">
+          <svg class="w-3 h-3 text-emerald-300" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+          +91 98765 43210
+        </span>
+        <span class="border-l border-emerald-600 h-3"></span>
+        <span class="flex items-center gap-1">
+          <svg class="w-3 h-3 text-emerald-300" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+          help@jeevanashray.org
+        </span>
+      </div>
+
+      <span class="hidden md:block border-l border-emerald-600 h-3"></span>
+
+      <div class="animate-pulse">
+        <a href="#" class="underline hover:text-emerald-200 transition font-bold">Urgent: Support our Winter Care Drive ❄️</a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="bg-white border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-20 items-center">
+        
+        <div class="flex items-center gap-3 cursor-pointer">
+          <div class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center shadow-lg transform rotate-3">
+            <span class="text-white font-black text-xl -rotate-3">H</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="text-lg font-extrabold text-gray-800 leading-none tracking-tight">JEEVAN ASHRAY</span>
+            <span class="text-[10px] text-emerald-600 font-bold uppercase tracking-[0.2em] mt-1">Old Age Home</span>
+          </div>
+        </div>
+
+        <div class="hidden md:flex flex-1 justify-center space-x-10">
+          <a href="#" class="text-gray-600 hover:text-emerald-700 font-bold text-sm transition-all duration-200 border-b-2 border-transparent hover:border-emerald-600 pb-1 uppercase tracking-wider">About Us</a>
+          <a href="#" class="text-gray-600 hover:text-emerald-700 font-bold text-sm transition-all duration-200 border-b-2 border-transparent hover:border-emerald-600 pb-1 uppercase tracking-wider">Our Elders</a>
+          <a href="#" class="text-gray-600 hover:text-emerald-700 font-bold text-sm transition-all duration-200 border-b-2 border-transparent hover:border-emerald-600 pb-1 uppercase tracking-wider">Volunteer</a>
+          <a href="#" class="text-gray-600 hover:text-emerald-700 font-bold text-sm transition-all duration-200 border-b-2 border-transparent hover:border-emerald-600 pb-1 uppercase tracking-wider">Contact</a>
+        </div>
+
+        <div class="hidden md:block">
+          <button class="bg-emerald-600 text-white px-7 py-3 rounded-full font-black text-sm hover:bg-emerald-700 shadow-lg shadow-emerald-100 transition-all transform hover:-translate-y-1">
+            DONATE NOW ❤️
+          </button>
+        </div>
+
+        <div class="md:hidden flex items-center">
+          <button (click)="toggleMenu()" class="p-2 text-gray-600 hover:text-emerald-600 transition focus:outline-none">
+            @if (!isMenuOpen) {
+              <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+              </svg>
+            } @else {
+              <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            }
+          </button>
+        </div>
+      </div>
+    </div>
+
+    @if (isMenuOpen) {
+      <div class="md:hidden bg-white border-t border-gray-100">
+        <div class="px-6 py-8 space-y-4 shadow-2xl">
+          <a href="#" class="block text-xl font-bold text-gray-800 hover:text-emerald-600 py-2 border-b border-gray-50">About Us</a>
+          <a href="#" class="block text-xl font-bold text-gray-800 hover:text-emerald-600 py-2 border-b border-gray-50">Our Elders</a>
+          <a href="#" class="block text-xl font-bold text-gray-800 hover:text-emerald-600 py-2 border-b border-gray-50">Volunteer</a>
+          <a href="#" class="block text-xl font-bold text-gray-800 hover:text-emerald-600 py-2 border-b border-gray-50">Contact</a>
+          <div class="pt-6">
+            <button class="w-full bg-emerald-600 text-white py-5 rounded-2xl font-black text-xl">DONATE NOW ❤️</button>
+          </div>
+        </div>
+      </div>
+    }
+  </nav>
+</header>
