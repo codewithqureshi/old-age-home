@@ -1,56 +1,74 @@
-<section class="py-24 bg-white overflow-hidden">
-  <div class="max-w-7xl mx-auto px-6">
-    <div class="flex flex-col lg:flex-row items-center gap-16">
+<section id="about-section" class="relative py-32 bg-[#050505] text-white overflow-hidden font-sans">
+  
+  <div class="absolute top-0 -left-20 w-96 h-96 bg-emerald-900/20 blur-[120px] rounded-full"></div>
+  <div class="absolute bottom-0 -right-20 w-96 h-96 bg-emerald-800/10 blur-[120px] rounded-full"></div>
+
+  <div class="max-w-7xl mx-auto px-8 relative z-10">
+    
+    <div class="mb-40">
+      <div class="inline-block px-4 py-1 border border-emerald-500/30 rounded-full bg-emerald-500/5 mb-8">
+        <span class="text-emerald-400 text-xs font-bold uppercase tracking-widest">🌿 Since 2010</span>
+      </div>
       
-      <div class="lg:w-1/2 space-y-8 text-center lg:text-left">
-        <div class="space-y-4">
-          <span class="text-emerald-600 font-black uppercase tracking-[0.4em] text-xs bg-emerald-50 px-4 py-2 rounded-full">
-            Who We Are
-          </span>
-          <h2 class="text-4xl md:text-6xl font-black text-gray-900 leading-[1.1]">
-            Transforming Lives <br>
-            <span class="text-emerald-600">Since 2010.</span>
-          </h2>
-        </div>
-        
-        <p class="text-gray-500 text-lg leading-relaxed max-w-xl">
-          Jeevan Ashray is more than just an NGO. It's a sanctuary for those who have been forgotten. 
-          We provide medical care, emotional support, and a family to every elder we rescue. 
-          Our mission is to ensure no one spends their golden years in loneliness.
-        </p>
-
-        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-          <button class="bg-emerald-600 text-white px-8 py-4 rounded-2xl font-bold hover:bg-emerald-700 transition-all shadow-xl shadow-emerald-200">
-            Read Our Full Story
-          </button>
-          <div class="flex items-center gap-3 px-6 py-4 border border-gray-100 rounded-2xl bg-gray-50/50">
-            <span class="flex h-3 w-3 rounded-full bg-emerald-500 animate-ping"></span>
-            <span class="font-bold text-gray-700">80G Tax Benefits Available</span>
-          </div>
+      <div class="grid lg:grid-cols-2 gap-16 items-start">
+        <h2 class="text-6xl md:text-8xl font-bold tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-b from-white to-gray-500">
+          More than <br> Just a Home.
+        </h2>
+        <div class="space-y-8">
+          <p class="text-2xl text-gray-300 leading-relaxed font-light">
+            We are a compassionate sanctuary in <span class="text-white font-semibold">Maharashtra</span>, providing a safe, respectful, and loving environment for senior citizens.
+          </p>
+          <p class="text-lg text-gray-400 leading-relaxed max-w-xl">
+            Our community is where elders are treated with family-like kindness. We strive for a peaceful atmosphere where every resident feels valued, respected, and truly at home.
+          </p>
         </div>
       </div>
-
-      <div class="lg:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6 relative">
-        <div class="absolute -z-10 inset-0 bg-emerald-100/50 blur-[100px] rounded-full scale-150"></div>
-
-        @for (stat of stats; track stat.label; let i = $index) {
-          <div class="bg-white p-8 rounded-[2.5rem] border border-gray-100 shadow-[0_20px_50px_rgba(0,0,0,0.04)] hover:shadow-emerald-900/10 transition-all duration-500 group"
-               [ngStyle]="{'margin-top': i % 2 !== 0 ? '40px' : '0px'}">
-            
-            <div class="w-14 h-14 bg-emerald-50 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-emerald-600 group-hover:rotate-6 transition-all duration-500">
-              <span class="group-hover:scale-110 transition-transform">{{ stat.icon }}</span>
-            </div>
-            
-            <h3 class="text-4xl font-black text-gray-900 mb-2 tracking-tight group-hover:text-emerald-600 transition-colors">
-              {{ stat.count }}
-            </h3>
-            <p class="text-gray-500 font-bold uppercase tracking-widest text-[10px]">
-              {{ stat.label }}
-            </p>
-          </div>
-        }
-      </div>
-
     </div>
+
+    <div class="mb-40 py-20 border-y border-white/5">
+      <div class="flex flex-col md:flex-row justify-between items-start gap-12 mb-16">
+        <h3 class="text-4xl font-bold uppercase tracking-tighter">Our Mission —</h3>
+        <p class="text-2xl md:text-4xl text-emerald-400 max-w-3xl leading-snug">
+          "Enhancing quality of life through <span class="text-white italic underline decoration-emerald-500/50 underline-offset-8">personalized care</span> and emotional support."
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="space-y-4 p-4 hover:bg-white/5 transition-colors rounded-2xl">
+          <div class="text-emerald-500 font-black text-xl">01.</div>
+          <div class="text-sm font-bold uppercase tracking-widest">Respect & Dignity</div>
+        </div>
+        <div class="space-y-4 p-4 hover:bg-white/5 transition-colors rounded-2xl">
+          <div class="text-emerald-500 font-black text-xl">02.</div>
+          <div class="text-sm font-bold uppercase tracking-widest">Safety & Security</div>
+        </div>
+        <div class="space-y-4 p-4 hover:bg-white/5 transition-colors rounded-2xl">
+          <div class="text-emerald-500 font-black text-xl">03.</div>
+          <div class="text-sm font-bold uppercase tracking-widest">Companionship</div>
+        </div>
+        <div class="space-y-4 p-4 hover:bg-white/5 transition-colors rounded-2xl">
+          <div class="text-emerald-500 font-black text-xl">04.</div>
+          <div class="text-sm font-bold uppercase tracking-widest">Healthcare</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="relative py-20 bg-gradient-to-br from-emerald-950/40 to-black p-12 rounded-[3rem] border border-white/10 overflow-hidden">
+      <div class="absolute -bottom-10 -right-10 text-[12rem] font-black text-white/5 pointer-events-none">VISION</div>
+      
+      <div class="max-w-4xl relative z-10">
+        <span class="text-emerald-400 font-black text-xs uppercase tracking-[0.5em] mb-8 block">Our Vision —</span>
+        <h2 class="text-4xl md:text-6xl font-medium leading-[1.2] mb-12">
+          To become a <span class="text-white font-black underline decoration-emerald-500">trusted</span> and caring home, where aging is embraced with grace, comfort, and happiness.
+        </h2>
+        
+        <div class="flex flex-wrap gap-6">
+          <span class="px-6 py-2 rounded-full border border-white/10 text-xs font-bold uppercase tracking-widest hover:bg-white/10 cursor-default transition-all">Healthy Living</span>
+          <span class="px-6 py-2 rounded-full border border-white/10 text-xs font-bold uppercase tracking-widest hover:bg-white/10 cursor-default transition-all">Strong Connections</span>
+          <span class="px-6 py-2 rounded-full border border-white/10 text-xs font-bold uppercase tracking-widest hover:bg-white/10 cursor-default transition-all">Belonging</span>
+        </div>
+      </div>
+    </div>
+
   </div>
 </section>
