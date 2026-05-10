@@ -9,33 +9,33 @@ import { Component } from '@angular/core';
 export class Services {
   newServices = [
     {
-      title: 'Premium Living Spaces',
-      description: 'Spacious, clean, and well-maintained rooms designed for maximum comfort, ventilation, and ease of mobility.',
+      title: 'Comfortable Living',
+      description: 'Simple, clean, and airy rooms where elders can feel at ease and move around safely, just like at home.',
       icon: '🏠'
     },
     {
-      title: 'Individualized Care',
-      description: 'Customized care plans tailored to meet each resident’s unique health requirements and personal daily needs.',
-      icon: '📋'
+      title: 'Personal Attention',
+      description: 'We understand every resident has different needs. Our staff provides dedicated care based on individual health and habits.',
+      icon: '🤲'
     },
     {
-      title: 'Medical Assistance',
-      description: 'Regular health check-ups by specialists and 24/7 on-call medical assistance for complete peace of mind.',
-      icon: '⚕️'
+      title: 'Healthcare Support',
+      description: 'Regular health check-ups and 24/7 on-call medical assistance to ensure our elders stay healthy and safe.',
+      icon: '🩺'
     },
     {
-      title: '24/7 Emergency Care',
-      description: 'Round-the-clock attentive supervision and emergency response systems to ensure total safety for our elders.',
-      icon: '🚨'
+      title: 'Constant Supervision',
+      description: 'Our team is always present to help and respond quickly to any emergency, day or night.',
+      icon: '🛡️'
     },
     {
-      title: 'Wellness & Recreation',
-      description: 'Daily social gatherings, wellness programs, and recreational activities to keep residents mentally and physically engaged.',
-      icon: '🌟'
+      title: 'Social Wellbeing',
+      description: 'Daily interaction, light recreation, and prayer meets to keep the mind happy and remove the feeling of loneliness.',
+      icon: '🙏'
     },
     {
-      title: 'Compassionate Support',
-      description: 'Dignified assistance with daily activities like bathing, dressing, and mobility, provided with love and respect.',
+      title: 'Dignified Daily Care',
+      description: 'Respectful help with daily activities like bathing and dressing, provided with the same love one gives to their own family.',
       icon: '🤝'
     }
   ];
